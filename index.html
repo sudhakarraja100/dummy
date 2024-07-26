@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sudhakar Raja Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="task3.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #vdeo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .background{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(180, 222, 208);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            padding: 1em;
+            color: aliceblue;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar li {
+            margin-right: 50px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white; 
+        }
+        .navbar a:hover {
+            color: yellowgreen;
+            border-bottom: 3px solid yellowgreen; 
+        }
+        .bodyyy {
+            margin-top: 120px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0 25px;
+        }
+        .showcase {
+            width: 100%;
+            max-width: 800px;
+            height: 300px;
+            background-color: rgb(12, 12, 12,0.9);
+            color: rgb(243, 238, 238);
+            margin: 25px 0;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .showcase h1 {
+            color: greenyellow;
+            font-size: 50px;
+            margin: 10px 0;
+        }
+        .showcase p {
+            color: rgb(209, 225, 185);
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .showcase a {
+            color: white;
+            text-decoration: none;
+            border: 2px solid greenyellow;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .showcase a:hover {
+            background-color: greenyellow;
+            color: rgb(29, 60, 145);
+        }
+        .edu {
+            width: 100%;
+            max-width: 800px;
+            margin: 25px 0;
+        }
+        .edu-details, .edu-schl {
+            background-color: rgb(240, 230, 230,0.8);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .edu h1, .edu h2, .edu h3 {
+            margin: 10px 0;
+            border-bottom: 2px white;
+        }
+        .ull {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        #contact{
+            font-size: 40px;
+            word-spacing: 5px;
+            text-decoration: none;
+            color: white;
+           
+        }
+        .icon-button {
+            color: rgba(255, 255, 255, 0.936);
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .icon-button:hover {
+            color: greenyellow;
+        }
+        .showcase:hover{
+            box-shadow: 0 0 20px yellowgreen;
+        }
+        .edu-details:hover, .edu-schl:hover{
+            box-shadow: 0 0 20px yellowgreen;
+
+        }
+
+        .logo{
+            animation: name 2s infinite;
+        }
+
+        @keyframes name {
+            from{
+                color:rgb(200, 202, 197);
+            }
+            25%{
+                color: yellowgreen;
+            }
+            75%{
+                color: white;
+            }
+            100%{
+                color: yellowgreen;
+            }
+            /* 15%{
+                color:rgb(193, 204, 169);
+            }
+            40%{
+                color:rgb(180, 209, 122);
+            }
+            60%{
+                color:rgb(172, 208, 99);
+            }
+            80%{
+                color:rgb(159, 203, 71);
+            }
+            100%{
+                color: yellowgreen;
+            } */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <video autoplay muted loop id="vdeo">
+            <source src="background-particle.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav>
+        <div class="navbar">
+            <h1 style="font-family: 'Courier New', Courier, monospace;" class="logo">Sudhakar Raja N P</h1>
+            <ul>
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#education">Education</a></li>
+                <li class="item"><a href="#skills">Technical Skills</a></li>
+                <li class="item"><a href="#Project">Projects</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bodyyy" id="home">
+        <section class="showcase">
+            <h1>Heyyy!!!! I'm Sudhakar Raja</h1>
+            <p>Software Developer & Programmer</p>
+            <p>an ambitious software developer with a passion for creating innovative and efficient solutions. With a strong foundation in Fullstack Web Development, I'm dedicated to continuous learning and tackling challenging projects that drive progress and make a difference.</p>
+            <a href="Resume Sudhakar.pdf" target="_blank">View Resume</a>
+        </section>
+        <section id="education" class="edu">
+            <h1 style="color: white;">Education</h1>
+            <div class="edu-details">
+                <h2><b>BE, Electronics And Communication</b></h2>
+                <p>Sept 2022 - July 2026</p>
+                <p>Sri Krishna College Engineering And Technology, Coimbatore</p>
+                <p>CGPA: 8.08</p>
+            </div>
+            <div class="edu-details">
+                <h2><b>Higher Secondary</b></h2>
+                <p>June 2020 - May 2022</p>
+                <p>Stanes Anglo Indian Higher Secondary School, Coimbatore</p>
+                <p>Percentage: 83%</p>
+            </div>
+        </section>
+        <section id="skills" class="edu">
+            <h1 style="color: white;">Technical Skills</h1>
+            <div class="edu-details">
+                <h3><b>Programming Languages</b></h3>
+                <ul class="ull">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Javascript</li>
+                    <li>Typescript</li>
+                </ul>
+            </div>
+            <div class="edu-details">
+                <h3><b>Query Language</b></h3>
+                <p>MySQL</p>
+            </div>
+            <div class="edu-details">
+                <h3><b>Data Structures And Algorithms</b></h3>
+                <p>Language: C++</p>
+            </div>
+            <div class="edu-details">
+                <h3><b>Microcontroller Expertise</b></h3>
+                <ul class="ull">
+                    <li>Arduino</li>
+                    <li>Esp32</li>
+                    <li>Stm32</li>   
+                </ul> 
+            </div>
+
+            <div class="edu-details">
+                <h3><b>Front End Development</b></h3>
+                <ul class="ull">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul> 
+            </div>
+        </section>
+        <section id="Project" class="edu">
+            <h1 style="color: white;">Projects</h1>
+            <div class="edu-details">
+                <h3><b>● AI-Integrated Reservoir Management for
+                    Flood Prevention</b></h3>
+                <p>
+                    Anadvancedreservoirmanagementsolution,
+                    seamlessly integrating IoT sensors, LoRa, and
+                    AI models (LSTM,XGBoost,RandomForest,GBM)
+                    Orchestrated a dynamic GIS dashboard with
+                    HTML,CSS,and JavaScript.</p>
+
+                </div>
+                <div class="edu-details">
+                    <h3><b>● Accident Detection and Alert System</b></h3>
+                    <p> An innovation app which can detect the
+                        accident based on the movement of
+                        accelerometer and send alert message to
+                        their family member and emergency services.</p>
+                    </div><br><br>
+        <section>
+        <section id="contact">
+            <p>Contact Me Through!!</p>
+            <a href="https://www.instagram.com/sudhakar_raja_/" target="_blank" class="icon-button"><i class="fab fa-linkedin fa-1.5x"></i></a>
+            <a href="https://www.instagram.com/sudhakar_raja_/" target="_blank" class="icon-button"><i class="fab fa-instagram fa-1.5x"></i></a>
+            <a href="https://github.com/sudhakarraja100" target="_blank" class="icon-button"><i class="fab fa-github fa-1.5x"></i></a>
+            <a href="https://www.instagram.com/sudhakar_raja_/" target="_blank" class="icon-button"><i class="fab fa-twitter fa-1.5x"></i></a>
+           
+        </section>
+    
+</body>
+</html>
